@@ -1,10 +1,17 @@
 import pandas as pd
 import logging as logger
+import seaborn as sns
 
 from matplotlib import pyplot as plt
 from typing import Tuple
 
 logger.basicConfig(level=logger.INFO)
+
+
+def graph_regression_plot(df_merge: pd.DataFrame) -> None:
+    sns.set(rc={'figure.figsize': (12, 6)})
+    sns.jointplot(x='Rainfall', y='Temperature', data=df_merge, kind='reg')
+    plt.show()
 
 
 def sort_data(df_merge: pd.DataFrame) -> None:
@@ -60,6 +67,9 @@ def main():
 
     # Sort data
     sort_data(df_merge)
+
+    # Graph linear regression
+    graph_regression_plot(df_merge)
 
 
 if __name__ == "__main__":
