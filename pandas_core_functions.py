@@ -1,7 +1,10 @@
 import pandas as pd
+import logging as logger
+
 from matplotlib import pyplot as plt
-from logger import logger
 from typing import Tuple
+
+logger.basicConfig(level=logger.INFO)
 
 
 def merge_data(df_1: pd.DataFrame, df_2: pd.DataFrame) -> None:
