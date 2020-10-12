@@ -3,8 +3,8 @@ from matplotlib import pyplot as plt
 
 
 def main():
-    df_temp = pd.read_csv('temperature_yearly.csv')
-    df_rain = pd.read_csv('rain_yearly.csv')
+    df_temp: pd.DataFrame = pd.read_csv('temperature_yearly.csv')
+    df_rain: pd.DataFrame = pd.read_csv('rain_yearly.csv')
 
     print(df_temp)
     print(df_rain)
