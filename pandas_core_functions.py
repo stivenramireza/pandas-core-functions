@@ -68,7 +68,7 @@ def main():
     # Sort data
     sort_data(df_merge)
 
-    # Graph regression
+    # Graph linear regression
     graph_regression_plot(df_merge)
 
 
