@@ -1,6 +1,6 @@
 import pandas as pd
-import logging as logger
 import seaborn as sns
+import logging as logger
 
 from matplotlib import pyplot as plt
 from typing import Tuple
